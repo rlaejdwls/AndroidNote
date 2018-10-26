@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_dynamic_01"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/layout_dynamic_02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="0.5">
+
+        <ImageView
+            android:id="@+id/img_dynamic_01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/siba_001_640_480" />
+
+        <ImageView
+            android:id="@+id/img_dynamic_02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/siba_002_640_640"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_dynamic_02"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_dynamic_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layout_dynamic_01"
+        app:layout_constraintTop_toTopOf="@+id/layout_dynamic_01"
+        app:layout_constraintHorizontal_weight="0.5">
+
+        <ImageView
+            android:id="@+id/img_dynamic_03"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/siba_003_420_420"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/img_dynamic_04"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/siba_004_640_640"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:id="@+id/layout_wrap_img_dynamic_05"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_dynamic_05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/description"
+                android:scaleType="centerCrop"
+                android:src="@drawable/quokka_001_375_375" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#85222222"
+                android:gravity="center"
+                android:text="+1"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
