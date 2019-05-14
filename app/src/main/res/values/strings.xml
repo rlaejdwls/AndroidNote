@@ -5,4 +5,5 @@
     <string name="btn_number_selector">숫자 선택 커스텀 뷰</string>
     <string name="btn_flexible_image_view">반응형(?) 이미지 뷰</string>
     <string name="btn_spannable_grid_view">레이아웃 병합 리사이클러 그리드 뷰</string>
+    <string name="btn_progress_button">프로그래스를 포함한 버튼</string>
 </resources>

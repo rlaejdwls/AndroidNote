@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.customviewexample.task.button.progress.widget.ProgressButton
+        android:id="@+id/btn_progress"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:background="#ef2c3a"
+        android:textAllCaps="false"
+        android:textSize="13sp"
+        android:textColor="#FFFFFF"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cpv_indeterminate="true"
+        app:cpv_color="#FFFFFF"
+        app:cpv_thickness="2dp"
+        app:cpv_margin="4dp"/>
+
+    <com.example.customviewexample.task.button.progress.widget.CircleProgressButton
+        android:id="@+id/btn_progress_for_java"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:background="#ef2c3a"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        app:cpb_color="#FFFFFF"
+        app:cpb_indeterminate="true"
+        app:cpb_margin="4dp"
+        app:cpb_thickness="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_progress" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,6 +22,7 @@
         <activity android:name=".task.number.selector.NumberSelectorActivity" />
         <activity android:name=".task.flexible.imageview.FlexibleImageViewActivity" />
         <activity android:name=".task.spannable.gridview.SpannableGridViewActivity" />
+        <activity android:name=".task.button.progress.ProgressActivity" />
     </application>
 
 </manifest>
